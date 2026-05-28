@@ -4,7 +4,8 @@ on:
   push:
     paths:
       - 'README.md'
-
+permissions:
+  contents: write
 jobs:
   generate:
     runs-on: ubuntu-latest
