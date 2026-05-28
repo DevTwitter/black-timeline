@@ -18,6 +18,7 @@ const timelineItems: TimelineItem[] = ${JSON.stringify(items, null, 4)};
 export default timelineItems;
 `;
 
+fs.mkdirSync('src/data', { recursive: true });
 fs.writeFileSync('src/data/timeline.ts', output);
 console.log(`Generated ${items.length} timeline items.`);
 
